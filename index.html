@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Calculadora">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="angularJS/scripts/app.js"></script>
+    <link href="estilos/style1.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-controller="CalculadoraCtrl" >
+    <aside id="grid">
+        <input ng-model = "barra" disabled>
+        <input ng-model = "barTemp" id="resultado" disabled>
+     
+        
+        <div class="botones">
+            <button class="del" ng-click="delete()">&#9003;</button>
+            <button class="mas" ng-click="operador('+')">+</button>
+            <button class="menos" ng-click="operador('-')">-</button>
+            <button class="por" ng-click="operador('*')">x</button>
+            <button class="div" ng-click="operador('/')">/</button>
+            <button class="igual" ng-click="igual()">=</button>
+            <button class="uno" ng-click="valor('1')">1</button>
+            <button class="dos"ng-click="valor('2')">2</button>
+            <button class="tres"ng-click="valor('3')">3</button>
+            <button class="cuatro"ng-click="valor('4')">4</button>
+            <button class="cinco"ng-click="valor('5')">5</button>
+            <button class="seis"ng-click="valor('6')">6</button>
+            <button class="siete"ng-click="valor('7')">7</button>
+            <button class="ocho"ng-click="valor('8')">8</button>
+            <button class="nueve"ng-click="valor('9')">9</button>
+            <button class="cero"ng-click="valor('0')">0</button>
+            <button class="C"ng-click="C()">C</button>
+            <button class="CE"ng-click="CE()">CE</button>
+            <button class="punto"ng-click="valor('.')">.</button>
+        </div>
+    </aside>   
+    
+
+</body>
+</html>
